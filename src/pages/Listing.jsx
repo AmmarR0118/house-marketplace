@@ -2,7 +2,7 @@ import { getAuth } from 'firebase/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import { useEffect } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import { db } from '../firebase.config';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import shareIcon from '../assets/svg/shareIcon.svg';
