@@ -63,7 +63,7 @@ function EditListing() {
       toast.error('You can not edit that listing.');
       navigate('/');
     }
-  }, [listing, auth.currentUser.uid, navigate]);
+  }, [listing, navigate]);
 
   // Fetch data for editing the listing
   useEffect(() => {
@@ -111,7 +111,7 @@ function EditListing() {
 
     setLoading(true);
 
-    if (discountedPrice >= regularPrice) {
+    if (parseInt(discountedPrice) >= parseInt(regularPrice)) {
       console.log(discountedPrice >= regularPrice)
       setLoading(false);
       toast.error('Discounted price needs to be less than regular price');
