@@ -112,6 +112,7 @@ function EditListing() {
     setLoading(true);
 
     if (discountedPrice >= regularPrice) {
+      console.log(discountedPrice >= regularPrice)
       setLoading(false);
       toast.error('Discounted price needs to be less than regular price');
       return;
